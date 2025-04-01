@@ -170,5 +170,25 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+# Ignore environment variables
+.env
+
+# Ignore AWS credentials and config
+.aws/
+*.pem
+*.key
+config.json
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Ignore logs
+logs/
+*.log
+
 # PyPI configuration file
 .pypirc
