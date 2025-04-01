@@ -1,0 +1,10 @@
+ifelse(
+    {overall_sentiment_score} > 0.66 AND {overall_sentiment_score} <= 1, 'Muy positivo', 
+    {overall_sentiment_score} > 0.33 AND {overall_sentiment_score} <= 0.66, 'Positivo', 
+    {overall_sentiment_score} > 0 AND {overall_sentiment_score} <= 0.33, 'Ligeramente positivo', 
+    {overall_sentiment_score} = 0, 'Neutral', 
+    {overall_sentiment_score} >= -0.33 AND {overall_sentiment_score} < 0, 'Ligeramente negativo',
+    {overall_sentiment_score} >= -0.66 AND {overall_sentiment_score} < -0.33, 'Negativo',
+    {overall_sentiment_score} >= -1 AND {overall_sentiment_score} < -0.66, 'Muy negativo',
+    'Desconocido'
+)
