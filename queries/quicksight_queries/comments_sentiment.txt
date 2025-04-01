@@ -1,0 +1,8 @@
+ifelse(
+    {avg_comment_sentiment}>0.5 AND {avg_comment_sentiment}<=1, 'Positivo', 
+    {avg_comment_sentiment}>0 AND {avg_comment_sentiment}<=0.5, 'Ligeramente positivo', 
+    {avg_comment_sentiment}=0, 'Neutral', 
+    {avg_comment_sentiment}>-0.5 AND {avg_comment_sentiment}<0, 'Ligeramente negativo',
+    {avg_comment_sentiment}>=-1 AND {avg_comment_sentiment}<=-0.5, 'Negativo',
+    'Desconocido'
+    )
