@@ -1,0 +1,6 @@
+ifelse(
+    {post_sentiment_score} = -1, 'Negativo',
+    {post_sentiment_score} = 0, 'Neutral',
+    {post_sentiment_score} = 1, 'Positivo',
+    'Desconocido'
+)
