@@ -2,6 +2,7 @@
 
 ## Overview
 This project analyzes sentiment from Reddit posts and comments using AWS services. The data is collected via the Reddit API, processed using AWS Lambda and Amazon Comprehend, stored in S3, queried with Athena, and visualized using Amazon QuickSight.
+For now the project collects only data form r/mexico subreddit with the plan to expand to further subreddits
 
 ## Tech Stack
 - **Data Collection**: Reddit API
